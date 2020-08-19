@@ -1,0 +1,116 @@
+body{
+	margin: auto 0; /*look at notes*/
+	font-family: Arial;
+}
+
+.zone{
+	/*padding: 30px 50px; /*remove to structure as a webpage*/
+	/*margin: 40px 60px; /*remove to structure as a webpage*/
+	cursor:pointer;
+	/*display:inline-block; remove to use flexbox*/
+	color:#FFF;
+	font-size:2em;
+	border-radius:4px;
+	border:1px solid #bbb;
+	transition: all 0.3s linear;
+}
+
+.zone:hover{
+	-webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, ;
+	-moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, ;
+	-o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, ;
+	box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, ;
+}
+
+.box:hover{
+	-webkit-transform: rotate(-7deg);
+	-moz-transform: rotate(-7deg);
+	-o-transform: rotate(-7deg);
+	transform: rotate(-7deg);
+}
+
+/* NAV */
+.sticky{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.main-nav{
+	display: flex; /*flexbox*/
+	list-style: none; /*removes pointers*/
+	font-size: 0.7em;
+	margin: 0; /*remove margins*/
+}
+
+@media only screen and (max-width: 600px){
+	.main-nav{
+		font-size: 0.5em;
+		padding: 0;
+	}
+
+}
+
+.push{
+	margin-left: auto; /*push contacts to the right in nav-main*/
+}
+
+li{
+	padding: 20px; /*for navigation items*/
+}
+
+a{
+	color: #f5f5f6;
+	text-decoration: none;
+}
+
+/*COVER*/
+.container{
+	display: flex; /*not using css grid yet*/
+	align-items: center;
+	justify-content: center;
+	height: 50vh; /*responsive to height relative to 1% of the height of the viewport*/
+
+}
+
+.cover{
+	width: 35rem;
+	height: 10rem;
+}
+
+/*CSS GRID*/
+.grid-wrapper{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.box > img{
+	width: 100%;
+}
+
+.box{
+	background-color: #444;
+	padding: 130px;
+	margin: 20px;
+}
+
+footer{
+	text-align: center;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	position: fixed;
+
+
+}
+
+.green{
+	background: #56B870;
+	background: -moz-linear-gradient(top, #56B870 );
+	background: -webkit-gradient(linear, left top);
+	background: -webkit-linear-gradient(top, #56B870);
+	background:	-o-linear-gradient(top, #56B870);
+	background: -ms-linear-gradient(top, #56B870);
+	background: linear-gradient(top, #56B870);
+}
